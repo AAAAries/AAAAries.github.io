@@ -84,18 +84,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><p>#用Githug+hexo搭建博客</p>
-<blockquote>
+<h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><h1 id="用Githug-hexo搭建博客"><a href="#用Githug-hexo搭建博客" class="headerlink" title="用Githug+hexo搭建博客"></a>用Githug+hexo搭建博客</h1><blockquote>
 <p>此为纯小白教程<br>博主前几天搭建了自己的博客，几经波折，最终在学长学姐的帮助下成功的搭建了博客，现在开始我的讲解。</p>
 </blockquote>
 <h4 id="安装git和Node"><a href="#安装git和Node" class="headerlink" title="安装git和Node"></a>安装git和Node</h4><ul>
-<li>配置git环境成功的标志是在电脑上任何地方单击右键都会出现以下两个选项<br><img src="./A4879E81D8E04259742E77706380E37C.jpg" alt="Alt text"></li>
-</ul>
-<h4 id="注册账户"><a href="#注册账户" class="headerlink" title="注册账户"></a>注册账户</h4><ul>
-<li>进行Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<br><img src="./InkedE1162701F9F6CE99235B190D0DABAC76_LI.jpg" alt="Alt text"></li>
-</ul>
-<h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><ul>
-<li>在开始位置输入命令提示符，打开CMD窗口查看是否安装并配置好node环境如图<br><img src="./1F55A2E76B020090F2D473B8D2645866.png" alt="Alt text"></li>
+<li>配置git环境成功的标志是在电脑上任何地方单击右键都会出现以下两个选项<h4 id="注册账户"><a href="#注册账户" class="headerlink" title="注册账户"></a>注册账户</h4></li>
+<li>进行Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4></li>
+<li>在开始位置输入命令提示符，打开CMD窗口查看是否安装并配置好node环境如图</li>
 </ul>
 <h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><ul>
 <li><p>安装Hexo，在自己认为合适的地方创个文件夹，我在D盘建了一个blog文件夹。然后可以在我的文件窗口最上方敲击CMD进入此文件夹的命令窗口</p>
@@ -113,82 +108,80 @@
 <li><p>如果出现版本号则证明安装成功</p>
 </li>
 </ul>
-<p><em>问题：如果此时出现hexo不是内部或外部命令</em><br><img src="./6B176D858101CADA3651519D147BD9F3.jpg" alt="Alt text"></p>
-<p><em>解决方法：在开始窗口输入环境变量，点击此窗口</em><br><img src="./2B5B796F6146E1E0FF5F1464E696F6B0.jpg" alt="Alt text"></p>
+<p><em>问题：如果此时出现hexo不是内部或外部命令</em></p>
+<p><em>解决方法：在开始窗口输入环境变量，点击此窗口</em></p>
 <ul>
 <li><p>这个之后，咱再运行一次hexo命令，即</p>
 <blockquote>
 <p>hexo -v</p>
 </blockquote>
 </li>
-<li><p>如下图<br><img src="./33937FF91B5964B687C12FF016DE47C8.jpg" alt="Alt text"></p>
+<li><p>如下图</p>
 </li>
 <li><p>输入以下命令初始化该文件夹（有点漫长，耐心等待） </p>
 <blockquote>
-<p>hexo init<br><img src="./BCFFBD7D98DE6ECD2C0BB39543FE9FBA.png" alt="Alt text"></p>
+<p>hexo init</p>
 </blockquote>
 </li>
 <li><p>看到后面的“Start blogging with Hexo！”则这步已成功。</p>
 </li>
 <li><p>输入以下命令安装所需要的组件</p>
 <blockquote>
-<p>npm  install<br><img src="./0EABF9D992F0FC7CBB30472CDC425A59.png" alt="Alt text"></p>
+<p>npm  install</p>
 </blockquote>
 </li>
 <li><p>输入以下命令首次体验Hexo</p>
 <blockquote>
-<p>hexo  g<br><img src="./E5B904F49E8ECB533E0FD4B36AF980B5.png" alt="Alt text"></p>
+<p>hexo  g</p>
 </blockquote>
 </li>
 <li><p>输入以下开启服务器，访问该网址，正式体验Hexo</p>
 <blockquote>
-<p>hexo  s<br><img src="./54A45E99C5C61D84BBA40FB2F6D8A944.png" alt="Alt text"></p>
+<p>hexo  s</p>
 </blockquote>
 </li>
-<li><p>将网址地址在浏览器中打开则能看到以下界面<br><img src="./76CB74CDA30325273CD4F2E5D1185397.jpg" alt="Alt text"></p>
+<li><p>将网址地址在浏览器中打开则能看到以下界面</p>
 <p><em>问题:如果打开网址时出现404，那么可能端口被占用了</em></p>
 </li>
 </ul>
-<p><em>解决方法:此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口号，再输入新的网址则可</em><br><img src="./8E725A32F79D9F573B1BC81DD8CAF2AE.png" alt="Alt text"></p>
+<p><em>解决方法:此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口号，再输入新的网址则可</em></p>
 <h4 id="将Hexo与Github-page联系起来"><a href="#将Hexo与Github-page联系起来" class="headerlink" title="将Hexo与Github page联系起来"></a>将Hexo与Github page联系起来</h4><ul>
-<li><p>设置Git的user name和email<br>在自己所新建的blog文件夹中单击右键，点击git bush<br><img src="./InkedC48025C4C49B06BA6AAD66C858F77B50_LI.jpg" alt="Alt text"></p>
+<li><p>设置Git的user name和email<br>在自己所新建的blog文件夹中单击右键，点击git bush</p>
 </li>
 <li><p>这里“  ”中的名字和邮箱地址可以替换成自己的信息。<br>输入以下检查是否由.ssh的文件夹</p>
 <blockquote>
-<p>cd ~/.ssh<br><img src="./4D4422FAF97495274C69E3C7C0510816.png" alt="Alt text"></p>
+<p>cd ~/.ssh</p>
 </blockquote>
 </li>
 <li><p>输入以下列出该文件下的内容。下图说明存在</p>
 <blockquote>
-<p>ls<br><img src="./42B7137769F199835D0656828DACF5FC.png" alt="Alt text"></p>
+<p>ls</p>
 </blockquote>
 </li>
 <li><p>输入以下并连续三个回车，生成密钥，最后得到了两个文件：id_rsa和id_rsa.pub<br>（默认存储路径是：C:\Users\Administrator.ssh）。</p>
 <blockquote>
-<p>ssh  -keygen  -t  rsa  -C “自己的邮箱地址”<br><img src="./Inked07E2C28FEA4A09252F2C53FCD338A81F_LI.jpg" alt="Alt text"></p>
+<p>ssh  -keygen  -t  rsa  -C “自己的邮箱地址”</p>
 </blockquote>
 </li>
-</ul>
-<ul>
 <li><p>在此步输入 y</p>
 </li>
 <li><p>输入以下，添加密钥到ssh-agent</p>
 <blockquote>
-<p>eval  “$(ssh-agent  -s)”<br><img src="./74F1EF976B8BA50561046A1829F26B8D.png" alt="Alt text"></p>
+<p>eval  “$(ssh-agent  -s)”</p>
 </blockquote>
 </li>
 <li><p>再输入以下，添加生成的SSH key到ssh-agent</p>
 <blockquote>
-<p>ssh-add  ~/.ssh/id_rsa<br><img src="./541AB8374C35285E023E661BC7C85AD0.png" alt="Alt text"></p>
+<p>ssh-add  ~/.ssh/id_rsa</p>
 </blockquote>
 </li>
 <li><p>登录Github，点击头像下的settings，添加ssh<br><img src="./AC9FEE12C69973E4AF76D4131B76ACD6.jpg" alt="Alt text"></p>
 </li>
-<li><p>新建一个new ssh key，将id_rsa.pub文件里的内容复制上去（可用记事本打开）<br><img src="./7769FF1942FF36DE863257565B23AF42.jpg" alt="Alt text"></p>
+<li><p>新建一个new ssh key，将id_rsa.pub文件里的内容复制上去（可用记事本打开）</p>
 </li>
 <li><p>输入以下，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
 <blockquote>
-<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br><img src="./2F31528D1E6B2E26E97B485E55D1B742.png" alt="Alt text"></p>
+<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
 </blockquote>
 </li>
 </ul>
@@ -198,11 +191,11 @@
 </blockquote>
 <p><em>删除你在github中的public-key</em><br><em>重新生成ssh密钥对</em><br><em>ssh-keygen -t rsa -C “你的邮箱地址”</em><br><em>然后继续上述操作即可</em></p>
 <h4 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h4><ul>
-<li>在blog文件夹中，找到_config.yml文件，修改repo值（在末尾直接输入即可）<br><img src="./C0E691D854173AEFD981DB32900C400B.jpg" alt="Alt text"></li>
+<li>在blog文件夹中，找到_config.yml文件，修改repo值（在末尾直接输入即可）</li>
 </ul>
 <p><strong>重点</strong>：所有的冒号后要有一个空格，否则自己的页面则是空白</p>
 <ul>
-<li>repository值是你在github项目里的ssh（右下角）<br><img src="./01C3559EDBD0B7D1D4A028E4BD026CC6.jpg" alt="Alt text"></li>
+<li>repository值是你在github项目里的ssh（右下角）</li>
 </ul>
 <h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><ul>
 <li>在blog文件夹中右击鼠标，进入Git bash 执行命令：<blockquote>
@@ -219,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck2nevpi20000noukf0tw04c3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck2nezoug00014cukcnug8ivl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -268,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/02/hello-world/" data-id="ck2nevpib0001nouk7u9l92j4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/02/hello-world/" data-id="ck2nezoua00004cukfh2uh8gx" class="article-share-link">Share</a>
       
       
     </footer>
