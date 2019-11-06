@@ -5,14 +5,41 @@
   
 
   
-  <title>Hexo</title>
+  <title>搭建博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+  <meta name="description" content="搭建博客#用Githug+hexo搭建博客  此为纯小白教程博主前几天搭建了自己的博客，几经波折，最终在学长学姐的帮助下成功的搭建了博客，现在开始我的讲解。  安装git和Node 配置git环境成功的标志是在电脑上任何地方单击右键都会出现以下两个选项  注册账户 进行Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="搭建博客#用Githug+hexo搭建博客  此为纯小白教程博主前几天搭建了自己的博客，几经波折，最终在学长学姐的帮助下成功的搭建了博客，现在开始我的讲解。  安装git和Node 配置git环境成功的标志是在电脑上任何地方单击右键都会出现以下两个选项  注册账户 进行Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initia">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;A4879E81D8E04259742E77706380E37C.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;InkedE1162701F9F6CE99235B190D0DABAC76_LI.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;1F55A2E76B020090F2D473B8D2645866.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;6B176D858101CADA3651519D147BD9F3.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;2B5B796F6146E1E0FF5F1464E696F6B0.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;33937FF91B5964B687C12FF016DE47C8.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;BCFFBD7D98DE6ECD2C0BB39543FE9FBA.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;0EABF9D992F0FC7CBB30472CDC425A59.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;E5B904F49E8ECB533E0FD4B36AF980B5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;54A45E99C5C61D84BBA40FB2F6D8A944.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;76CB74CDA30325273CD4F2E5D1185397.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;8E725A32F79D9F573B1BC81DD8CAF2AE.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;InkedC48025C4C49B06BA6AAD66C858F77B50_LI.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;4D4422FAF97495274C69E3C7C0510816.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;42B7137769F199835D0656828DACF5FC.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;Inked07E2C28FEA4A09252F2C53FCD338A81F_LI.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;74F1EF976B8BA50561046A1829F26B8D.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;541AB8374C35285E023E661BC7C85AD0.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;AC9FEE12C69973E4AF76D4131B76ACD6.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;7769FF1942FF36DE863257565B23AF42.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;2F31528D1E6B2E26E97B485E55D1B742.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;C0E691D854173AEFD981DB32900C400B.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;01C3559EDBD0B7D1D4A028E4BD026CC6.jpg">
+<meta property="og:updated_time" content="2019-11-06T14:50:30.342Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;06&#x2F;%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&#x2F;A4879E81D8E04259742E77706380E37C.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +86,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
   <time datetime="2019-11-06T14:48:34.195Z" itemprop="datePublished">2019-11-06</time>
@@ -74,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
+    <h1 class="article-title" itemprop="name">
+      搭建博客
     </h1>
   
 
@@ -225,60 +250,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/02/hello-world/" class="article-date">
-  <time datetime="2019-11-02T15:43:28.017Z" itemprop="datePublished">2019-11-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/02/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2019/11/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/02/hello-world/" data-id="ck2msfqve0000ncuk7jfi92e1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
