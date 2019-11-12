@@ -61,6 +61,110 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-排序算法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" class="article-date">
+  <time datetime="2019-11-12T13:28:34.224Z" itemprop="datePublished">2019-11-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">排序算法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="冒泡、选择、插入排序"><a href="#冒泡、选择、插入排序" class="headerlink" title="冒泡、选择、插入排序"></a>冒泡、选择、插入排序</h2><h1 id="三种排序方法"><a href="#三种排序方法" class="headerlink" title="三种排序方法"></a>三种排序方法</h1><p>####1.冒泡排序<br>该方法的原理是将第一项与第二项比较，如果第二项比第一项小，则两项位置交换，接下来再用第二项与第三项比较，如果第三项比第二项小，两项位置交换，再下来用第三项与第四项相比，如果第四项比第三项大则两数位置不交换。再用第四项与第五项相比。以此类推，最后我们能排出一个最小的数。然后再从第二项开始往后比，排出次小的则需要用两个for循环。</p>
+<ul>
+<li>如图<br><img src="https://s2.ax1x.com/2019/11/12/M3jiYF.png" alt="M3jiYF.png"></li>
+</ul>
+<p>代码实现</p>
+<pre><code>    int main(){
+int i,j,a[100],n,temp;//先设定一个100的数组，以n做为具体数组大小 
+for(n=0;n&lt;5;n++)
+  scanf(&quot;%d&quot;,&amp;a[n]);
+for(i=0;i&lt;5;i++){
+    for(j=0;j&lt;4;j++){
+        if(a[i]&lt;a[j]){
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+}
+for(n=0;n&lt;5;n++)
+  printf(&quot;%d&quot;,a[n]);
+return 0;
+}</code></pre><h4 id="2-选择排序"><a href="#2-选择排序" class="headerlink" title="2.选择排序"></a>2.选择排序</h4><p>这一排序方法是在所有的数组元素中先选择一个最小的元素，然后将此元素放到排序序列的起始位置，然后再从剩余未序元素中继续寻找最小元素。放到已排序列的末尾，以此类推，直到所有元素均排序完毕。此方法用到一个for循环和交换算法。</p>
+<ul>
+<li><p>代码实现</p>
+<pre><code>int main(){
+int i,j,k,a[5],temp;
+ for(i=0;i&lt;5;i++)
+     scanf(&quot;%d&quot;,&amp;a[i]);
+ for(i=0;i&lt;5;i++){
+     k=i;
+ for(j=i+1;j&lt;5;j++){
+ if (a[j] &lt; a[k]) {
+      k = j;
+    }
+}
+temp = a[k];
+a[k] = a[i];
+a[i] = temp;    
+  }
+
+ for(i=0;i&lt;5;i++)
+    printf(&quot;%d &quot;,a[i]);    
+return 0;
+}</code></pre><h4 id="3-插入排序"><a href="#3-插入排序" class="headerlink" title="3.插入排序"></a>3.插入排序</h4><p>此排序方法是将数组的第一个元素认定为已排序元素，将之后的元素认定为未排序元素，然后从未排序元素的第一个元素开始，如果比一排序元素大则放到此元素之后，如果比该元素小则放到此元素之前。然后把这两个数认定为已排序好的数列。再从未排序数列中的第一个元素，与已排序数列做比较。同理，直至排序完成。</p>
+</li>
+<li><p>如图<br><img src="https://s2.ax1x.com/2019/11/12/M8SyCT.png" alt="M8SyCT.png"></p>
+</li>
+<li><p>代码实现</p>
+<pre><code>int main( {
+int i,j,n;
+int a[5];
+for(n=0;n&lt;5;n++)
+  scanf(&quot;%d&quot;,&amp;a[n]); 
+for(i=1; i&lt;n; i++)
+    if(a[i] &lt; a[i-1])   
+{
+    int temp = a[i];                       //保存要比较的值
+    for(j=i-1; j&gt;=0 &amp;&amp; a[j]&gt;temp; j--)    //从后向前查找待插入位置
+        a[j+1] = a[j];                    //挪位
+    a[j+1] = temp;                       //复制到插入位置
+}
+for(n=0;n&lt;5;n++)
+  printf(&quot;%d &quot;,a[n]);
+
+return 0;
+}</code></pre></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" data-id="ck2vw9xda0000wouk1zmk5qhj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
@@ -307,6 +411,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">排序算法</a>
+          </li>
         
           <li>
             <a href="/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
