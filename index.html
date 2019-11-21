@@ -94,11 +94,11 @@ int i,j,a[100],n,temp;//先设定一个100的数组，以n做为具体数组大�
 for(n=0;n&lt;5;n++)
   scanf(&quot;%d&quot;,&amp;a[n]);
 for(i=0;i&lt;5;i++){
-    for(j=0;j&lt;4;j++){
-        if(a[i]&lt;a[j]){
-            temp=a[i];
-            a[i]=a[j];
-            a[j]=temp;
+    for (j = 0; j &lt; 5-i; j++) {
+        if (a[j] &gt; a[j+1]) {
+            temp = a[j];
+            a[j] = a[j+1];
+            a[j+1] = temp;
         }
     }
 }
@@ -155,7 +155,7 @@ return 0;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" data-id="ck2vw9xda0000wouk1zmk5qhj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/12/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" data-id="ck38cq7nl0002hguk2mwd39vf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -323,7 +323,7 @@ return 0;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck2t1pwek00004cuk2s3v70gi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck38cq7nh0001hguk5hpceaeb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -372,7 +372,7 @@ return 0;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/02/hello-world/" data-id="ck2t1pwfn00014cuk9zp0hkou" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/02/hello-world/" data-id="ck38cq7m20000hguk3fhu8woi" class="article-share-link">Share</a>
       
       
     </footer>
